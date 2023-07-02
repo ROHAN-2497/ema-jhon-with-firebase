@@ -10,7 +10,6 @@ const Header = () => {
     logOut()
       .then((result) => {})
       .catch((error) => {
-        console.error();
       });
   };
   return (
@@ -26,7 +25,7 @@ const Header = () => {
           <span className="text-white">
             {" "}
             welcome {user.email}{" "}
-            <button onClick={handleSignOut}> Log Out</button>
+            <button onClick={handleSignOut}>Log Out</button>
           </span>
         )}
       </div>
